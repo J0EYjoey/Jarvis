@@ -76,7 +76,7 @@ brew install poppler
 Clone this repo into your Codex skills directory:
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/research-junshi-codex.git ~/.codex/skills/research-junshi
+git clone https://github.com/J0EYjoey/Jarvis.git ~/.codex/skills/research-junshi
 ```
 
 Codex discovers skills from `~/.codex/skills/`. No extra plugin reload step is required.
