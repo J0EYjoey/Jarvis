@@ -152,11 +152,8 @@ Built-in venue knowledge covers:
 | Machine Learning | NeurIPS, ICML, ICLR, JMLR |
 | Computer Vision | CVPR, ICCV, ECCV |
 | NLP | ACL, EMNLP, NAACL |
-| Robotics | ICRA, RSS, CoRL |
 | Biology | Nature, Science, Cell, Bioinformatics |
-| Physics | PRL, PRX, Nature Physics |
-| Economics / Statistics | Econometrica, AER, Annals of Statistics |
-| Systems / HCI | SOSP, OSDI, SIGCHI, UIST |
+| Economics / Statistics | Econometrica, AER, JASA, Biometrika, Annals of Statistics, JRSS-B |
 
 If your field or venue is not listed, tell Jarvis and it will adapt.
 

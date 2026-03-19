@@ -44,14 +44,6 @@ Suggested bioRxiv search pattern for those areas:
 | EMNLP | `site:aclanthology.org EMNLP [keywords]` |
 | NAACL | `site:aclanthology.org NAACL [keywords]` |
 
-## Robotics
-
-| Venue | Search pattern |
-|---|---|
-| ICRA | `site:ieeexplore.ieee.org ICRA [keywords]` |
-| RSS | `site:roboticsproceedings.org [keywords]` |
-| CoRL | `site:proceedings.mlr.press CoRL [keywords]` |
-
 ## Biology / Bioinformatics
 
 | Venue | Search pattern |
@@ -62,30 +54,16 @@ Suggested bioRxiv search pattern for those areas:
 | Bioinformatics | `site:academic.oup.com/bioinformatics [keywords]` |
 | NeurIPS Comp Bio | `site:proceedings.neurips.cc computational biology [keywords]` |
 
-## Physics
-
-| Venue | Search pattern |
-|---|---|
-| Physical Review Letters | `site:journals.aps.org/prl [keywords]` |
-| Physical Review X | `site:journals.aps.org/prx [keywords]` |
-| Nature Physics | `site:nature.com/nphys [keywords]` |
-
 ## Economics / Statistics
 
 | Venue | Search pattern |
 |---|---|
 | Econometrica | `site:econometricsociety.org [keywords]` |
 | AER | `site:aeaweb.org/articles [keywords]` |
+| JASA | `site:amstat.tandfonline.com JASA [keywords]` |
+| Biometrika | `site:academic.oup.com/biomet [keywords]` |
 | Annals of Statistics | `site:projecteuclid.org/aos [keywords]` |
 | JRSS-B | `site:academic.oup.com/jrsssb [keywords]` |
-
-## Systems / HCI
-
-| Venue | Search pattern |
-|---|---|
-| SOSP / OSDI | `site:usenix.org [keywords]` |
-| SIGCHI | `site:dl.acm.org CHI [keywords]` |
-| UIST | `site:dl.acm.org UIST [keywords]` |
 
 ---
 
@@ -97,11 +75,7 @@ Suggested bioRxiv search pattern for those areas:
 | Computer Vision | cs.CV |
 | NLP | cs.CL |
 | AI (general) | cs.AI |
-| Robotics | cs.RO |
 | Computational Biology | q-bio.GN, q-bio.QM, cs.LG |
-| Physics (general) | physics.gen-ph, cond-mat |
 | Economics | econ.EM, econ.TH |
 | Statistics | stat.ME, stat.TH |
 | Quantum Computing | quant-ph |
-| Systems | cs.OS, cs.DC |
-| HCI | cs.HC |
