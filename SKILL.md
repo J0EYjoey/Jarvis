@@ -30,6 +30,7 @@ Collect:
 - Papers folder path, if any
 - Target venues
 - arXiv categories
+- Whether bioRxiv should be monitored for biology-heavy areas such as single-cell omics, spatial transcriptomics, and multiomics generative modeling
 - Preliminary results, observations, failed experiments, or hypotheses
 
 When the user does not specify venues or categories, infer them from [references/venues.md](references/venues.md). Pick the 4-6 most relevant venues and the most relevant categories, then tell the user what you chose so they can correct you.
@@ -124,7 +125,21 @@ Use patterns from [references/venues.md](references/venues.md). For unknown venu
 
 Focus on the last 1-2 years. Pick the 3-5 most relevant venue papers total. Keep arXiv and venue papers in separate digest subsections.
 
-### 3. Summarize the most relevant papers
+### 3. Search bioRxiv when the area warrants it
+
+If the user's profile includes single-cell omics, spatial transcriptomics, multiomics generative modeling, computational genomics, or similarly biology-heavy method development, also search bioRxiv.
+
+Do not run bioRxiv search for unrelated areas such as semiparametric statistics, mechanistic interpretability, optimal transport theory, or causal representation learning unless the user explicitly asks for it.
+
+Use a focused bioRxiv search for the biology area only. Prioritize recent preprints that are likely to matter for:
+- single-cell or spatial foundation/generative models
+- multimodal integration or alignment
+- deconvolution, cell-type/state modeling, or perturbation modeling
+- biologically meaningful latent-variable models
+
+Select the 3-5 most relevant bioRxiv papers total when this search is active. Keep them in a separate digest subsection.
+
+### 4. Summarize the most relevant papers
 
 For each selected paper, write:
 
@@ -136,7 +151,7 @@ For each selected paper, write:
 - **Relevance**: [why it matters for this researcher]
 ```
 
-### 4. Generate bold ideas
+### 5. Generate bold ideas
 
 Read the `Preliminary Results` section first. Use it as a primary source of originality.
 
@@ -151,7 +166,7 @@ Generate 8-10 raw, specific, actionable ideas.
 
 Give bonus weight to ideas grounded in the user's preliminary results, and say which result motivated each one.
 
-### 5. Rank ideas
+### 6. Rank ideas
 
 Score each idea:
 - Novelty: 1-5
@@ -164,7 +179,7 @@ Use:
 
 Select the top 3-5 ideas.
 
-### 6. Save the digest
+### 7. Save the digest
 
 Save to `~/.codex/jarvis/digests/YYYY-MM-DD.md`:
 
@@ -178,6 +193,9 @@ Save to `~/.codex/jarvis/digests/YYYY-MM-DD.md`:
 
 ### arXiv
 [Relevant arXiv summaries]
+
+### bioRxiv
+[Relevant bioRxiv summaries when applicable]
 
 ### Venues
 [Relevant venue summaries]
@@ -196,7 +214,7 @@ Save to `~/.codex/jarvis/digests/YYYY-MM-DD.md`:
 - [Remaining raw ideas]
 ```
 
-### 7. Report back
+### 8. Report back
 
 After saving the digest, return:
 - One-line landscape summary

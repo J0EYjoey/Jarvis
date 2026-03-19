@@ -2,7 +2,7 @@
 
 Your personalized research strategist for Codex.
 
-Jarvis is a Codex skill for researchers. It reads your papers, builds a profile of your methods and interests, tracks recent papers from arXiv and the venues you care about, and proposes 3-5 ranked research directions you can actually test.
+Jarvis is a Codex skill for researchers. It reads your papers, builds a profile of your methods and interests, tracks recent papers from arXiv and the venues you care about, optionally searches bioRxiv for biology-heavy areas like single-cell and spatial omics modeling, and proposes 3-5 ranked research directions you can actually test.
 
 The skill name is `jarvis`.
 
@@ -55,7 +55,7 @@ may interfere with inference.
 ## What you get
 
 - Ideas grounded in your own work rather than generic brainstorming
-- Daily literature coverage across arXiv plus chosen venues
+- Daily literature coverage across arXiv plus chosen venues, with optional bioRxiv coverage for biology-heavy areas
 - Bold ranked ideas with first experiments and main risks
 - A standing research profile that improves as you add papers and preliminary results
 
@@ -159,6 +159,8 @@ Built-in venue knowledge covers:
 | Systems / HCI | SOSP, OSDI, SIGCHI, UIST |
 
 If your field or venue is not listed, tell Jarvis and it will adapt.
+
+For biology-heavy areas such as single-cell omics, spatial transcriptomics, and multiomics generative modeling, Jarvis can also search bioRxiv. This is scoped to those areas only and does not add bioRxiv search for unrelated areas unless you ask for it.
 
 ## Repository layout
 

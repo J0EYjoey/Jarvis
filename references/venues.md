@@ -1,4 +1,4 @@
-# Venue Search Reference (Internal — for Claude's use during setup)
+# Venue Search Reference
 
 This file is used by the skill to suggest and infer appropriate venues when the user
 doesn't specify them. Users never need to read or edit this file.
@@ -9,6 +9,12 @@ When inferring venues for a user's field:
 3. Save the chosen venues to the user's profile
 
 For venues not listed here, use: `site:[proceedings-url] [keywords]`
+
+For biology-heavy areas that rely heavily on preprints, especially single-cell omics, spatial transcriptomics, and multiomics modeling, also consider bioRxiv as a separate source in addition to venues and arXiv.
+
+Suggested bioRxiv search pattern for those areas:
+
+`site:biorxiv.org (single-cell OR single cell OR spatial transcriptomics OR multiomics OR multimodal) [keywords]`
 
 ---
 
