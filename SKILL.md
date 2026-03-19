@@ -33,7 +33,21 @@ Collect:
 - Whether bioRxiv should be monitored for biology-heavy areas such as single-cell omics, spatial transcriptomics, and multiomics generative modeling
 - Preliminary results, observations, failed experiments, or hypotheses
 
-When the user does not specify venues or categories, infer them from [references/venues.md](references/venues.md). Pick the 4-6 most relevant venues and the most relevant categories, then tell the user what you chose so they can correct you.
+When the user does not specify venues or categories, infer them from [references/venues.md](references/venues.md).
+
+If the user's research profile matches this five-area structure, use the dedicated five-area defaults in that reference first:
+- single-cell omics / spatial transcriptomics generative models
+- semiparametric statistics
+- optimal transport and statistical inference
+- mechanistic interpretability
+- causal representation learning
+
+For those five areas:
+- infer venues separately for each area rather than collapsing them into one blended list
+- use the dedicated arXiv category table for those five areas before falling back to the generic field-level table
+- only propose cross-area combinations when there is a real technical bridge
+
+Then tell the user what you chose so they can correct you.
 
 Tell the user that a single surprising preliminary result is often more valuable than a polished summary.
 
