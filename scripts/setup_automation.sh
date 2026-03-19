@@ -1,10 +1,10 @@
 #!/bin/bash
-# Junshi automation for Codex.
+# Jarvis automation for Codex.
 
 set -euo pipefail
 
 echo ""
-echo "=== Research Junshi: Codex Automation Setup ==="
+echo "=== Research Jarvis: Codex Automation Setup ==="
 echo ""
 
 CODEX_BIN=$(command -v codex 2>/dev/null || true)

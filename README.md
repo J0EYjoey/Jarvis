@@ -1,12 +1,12 @@
-# Junshi (军师) for Codex
+# Jarvis (贾维斯) for Codex
 
 Your personalized research strategist for Codex.
 
-Junshi is a Codex skill for researchers. It reads your papers, builds a profile of your methods and interests, tracks recent papers from arXiv and the venues you care about, and proposes 3-5 ranked research directions you can actually test.
+Jarvis is a Codex skill for researchers. It reads your papers, builds a profile of your methods and interests, tracks recent papers from arXiv and the venues you care about, and proposes 3-5 ranked research directions you can actually test.
 
 The skill name is `research-junshi`.
 
-You stay the researcher. Junshi acts like a daily 军师: it connects your past work to fresh literature, looks for gaps, and turns them into concrete ideas with a first experiment and a main risk.
+You stay the researcher. Jarvis acts like a daily 贾维斯: it connects your past work to fresh literature, looks for gaps, and turns them into concrete ideas with a first experiment and a main risk.
 
 It works across many fields, including machine learning, statistics, economics, biology, physics, robotics, and more.
 
@@ -30,7 +30,7 @@ My papers are in ~/papers.
 I'm thinking about better ways to handle high-dimensional confounders.
 ```
 
-Junshi reads your papers, builds a profile, searches recent arXiv and venue papers, and saves a digest like:
+Jarvis reads your papers, builds a profile, searches recent arXiv and venue papers, and saves a digest like:
 
 ```text
 ### [Rank 1] Debiased Lasso Meets Synthetic Control
@@ -63,7 +63,7 @@ may interfere with inference.
 
 - Codex CLI installed and logged in
 - Web search enabled when running the skill
-- `pdftotext` available if you want Junshi to read local PDFs
+- `pdftotext` available if you want Jarvis to read local PDFs
 
 Install Poppler for PDF extraction if needed:
 
@@ -98,7 +98,7 @@ My papers are in ~/papers.
 I'm thinking about [problem].
 ```
 
-Junshi will ask only for missing setup information, infer sensible defaults for venues and arXiv categories, and create:
+Jarvis will ask only for missing setup information, infer sensible defaults for venues and arXiv categories, and create:
 
 ```text
 ~/.codex/research-junshi/
@@ -158,7 +158,7 @@ Built-in venue knowledge covers:
 | Economics / Statistics | Econometrica, AER, Annals of Statistics |
 | Systems / HCI | SOSP, OSDI, SIGCHI, UIST |
 
-If your field or venue is not listed, tell Junshi and it will adapt.
+If your field or venue is not listed, tell Jarvis and it will adapt.
 
 ## Repository layout
 

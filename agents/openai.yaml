@@ -1,5 +1,5 @@
 interface:
-  display_name: "Research Junshi"
+  display_name: "Research Jarvis"
   short_description: "Daily research strategist and idea scout"
   default_prompt: "Use $research-junshi to build or update my research profile and generate a ranked research digest."
 
