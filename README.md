@@ -4,7 +4,7 @@ Your personalized research strategist for Codex.
 
 Jarvis is a Codex skill for researchers. It reads your papers, builds a profile of your methods and interests, tracks recent papers from arXiv and the venues you care about, and proposes 3-5 ranked research directions you can actually test.
 
-The skill name is `research-junshi`.
+The skill name is `jarvis`.
 
 You stay the researcher. Jarvis acts like a daily 贾维斯: it connects your past work to fresh literature, looks for gaps, and turns them into concrete ideas with a first experiment and a main risk.
 
@@ -14,17 +14,17 @@ It works across many fields, including machine learning, statistics, economics, 
 
 This repo ports the original `junshi-research/research-junshi` Claude Code skill to Codex:
 
-- Skill install path uses `~/.codex/skills/research-junshi`
-- User data is stored under `~/.codex/research-junshi`
+- Skill install path uses `~/.codex/skills/jarvis`
+- User data is stored under `~/.codex/jarvis`
 - Automation uses `codex exec --search`
-- Invocation is Codex-native via `$research-junshi`
+- Invocation is Codex-native via `$jarvis`
 
 ## 30-second example
 
 Start Codex with web search enabled, then say:
 
 ```text
-Use $research-junshi.
+Use $jarvis.
 I work on causal inference and econometrics.
 My papers are in ~/papers.
 I'm thinking about better ways to handle high-dimensional confounders.
@@ -76,7 +76,7 @@ brew install poppler
 Clone this repo into your Codex skills directory:
 
 ```bash
-git clone https://github.com/J0EYjoey/Jarvis.git ~/.codex/skills/research-junshi
+git clone https://github.com/J0EYjoey/Jarvis.git ~/.codex/skills/jarvis
 ```
 
 Codex discovers skills from `~/.codex/skills/`. No extra plugin reload step is required.
@@ -92,7 +92,7 @@ codex --search -C ~
 Then in Codex:
 
 ```text
-Use $research-junshi.
+Use $jarvis.
 I work on [your field].
 My papers are in ~/papers.
 I'm thinking about [problem].
@@ -101,30 +101,30 @@ I'm thinking about [problem].
 Jarvis will ask only for missing setup information, infer sensible defaults for venues and arXiv categories, and create:
 
 ```text
-~/.codex/research-junshi/
+~/.codex/jarvis/
 ├── profile.md
 ├── config.md
 └── digests/
     ├── YYYY-MM-DD.md
-    └── cron-junshi.log
+    └── cron-jarvis.log
 ```
 
 ### Daily digest
 
 ```text
-Use $research-junshi and give me today's research digest.
+Use $jarvis and give me today's research digest.
 ```
 
 ### Update your profile
 
 ```text
-Use $research-junshi and update my profile. I've shifted focus to [new direction].
+Use $jarvis and update my profile. I've shifted focus to [new direction].
 ```
 
 ### Add preliminary results
 
 ```text
-Use $research-junshi and add a preliminary result: [result].
+Use $jarvis and add a preliminary result: [result].
 ```
 
 ## Automation
@@ -132,7 +132,7 @@ Use $research-junshi and add a preliminary result: [result].
 To install a daily cron job:
 
 ```bash
-bash ~/.codex/skills/research-junshi/scripts/setup_automation.sh
+bash ~/.codex/skills/jarvis/scripts/setup_automation.sh
 ```
 
 The script asks for your preferred time and creates a cron entry that runs Codex non-interactively.

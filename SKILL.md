@@ -1,5 +1,5 @@
 ---
-name: research-junshi
+name: jarvis
 description: Daily research strategist and idea generator for any academic research area. Use when the user wants strategic research advice, asks what to work on next, wants a daily or recent literature digest, wants ranked project ideas grounded in their prior papers, wants help staying on top of arXiv and top venues, or wants to update a standing research profile that tracks their methods, themes, preliminary results, and target venues.
 ---
 
@@ -11,8 +11,8 @@ Adapt to the researcher's field. Go deep fast. Use domain vocabulary precisely.
 
 ## Codex Requirements
 
-- Store all user data under `~/.codex/research-junshi/`.
-- Treat the installed skill path as `~/.codex/skills/research-junshi/`.
+- Store all user data under `~/.codex/jarvis/`.
+- Treat the installed skill path as `~/.codex/skills/jarvis/`.
 - If web search is required but unavailable in the current Codex session, tell the user to rerun with search enabled, for example `codex --search` or `codex exec --search ...`.
 - If PDF text extraction is needed and `pdftotext` is unavailable, tell the user to install Poppler before continuing.
 
@@ -51,7 +51,7 @@ If no papers folder is available, continue with an empty paper-derived profile i
 
 ### 3. Build or update the research profile
 
-Save to `~/.codex/research-junshi/profile.md`:
+Save to `~/.codex/jarvis/profile.md`:
 
 ```markdown
 # Research Profile
@@ -95,7 +95,7 @@ Append new preliminary results. Do not overwrite prior ones unless the user expl
 
 ### 4. Save config
 
-Save to `~/.codex/research-junshi/config.md`:
+Save to `~/.codex/jarvis/config.md`:
 
 ```markdown
 # Config
@@ -108,7 +108,7 @@ Save to `~/.codex/research-junshi/config.md`:
 
 ## Daily Digest Workflow
 
-Load `~/.codex/research-junshi/profile.md` and `~/.codex/research-junshi/config.md` before generating ideas.
+Load `~/.codex/jarvis/profile.md` and `~/.codex/jarvis/config.md` before generating ideas.
 
 ### 1. Search arXiv
 
@@ -166,7 +166,7 @@ Select the top 3-5 ideas.
 
 ### 6. Save the digest
 
-Save to `~/.codex/research-junshi/digests/YYYY-MM-DD.md`:
+Save to `~/.codex/jarvis/digests/YYYY-MM-DD.md`:
 
 ```markdown
 # Research Digest - [DATE]
@@ -206,11 +206,11 @@ After saving the digest, return:
 
 ## Automation
 
-If the user wants automation, point them to `~/.codex/skills/research-junshi/scripts/setup_automation.sh`.
+If the user wants automation, point them to `~/.codex/skills/jarvis/scripts/setup_automation.sh`.
 
 Warn clearly that the automation script uses `codex exec --dangerously-bypass-approvals-and-sandbox --search` for unattended runs. That is intentionally powerful and should only be used in a trusted local environment after reviewing the script.
 
-Daily digests should be written to `~/.codex/research-junshi/digests/`.
+Daily digests should be written to `~/.codex/jarvis/digests/`.
 
 ## Tone
 

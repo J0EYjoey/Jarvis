@@ -1,7 +1,7 @@
 interface:
   display_name: "Research Jarvis"
   short_description: "Daily research strategist and idea scout"
-  default_prompt: "Use $research-junshi to build or update my research profile and generate a ranked research digest."
+  default_prompt: "Use $jarvis to build or update my research profile and generate a ranked research digest."
 
 policy:
   allow_implicit_invocation: true
